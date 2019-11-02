@@ -1,0 +1,103 @@
+body, html{
+  margin: 0;
+  height: 100%;
+}
+body{
+  display: flex;
+  background-color: #212126;
+}
+.contents {
+  margin: auto;
+  min-width: 700px;
+}
+
+.shifted-right {
+  margin-left: 95px !important;
+}
+.hex-group {
+  float: left;
+  margin: 10px;
+  margin-bottom: -35px;
+}
+.hex-group:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s;
+}
+
+.hexagon {
+  position: relative;
+  width: 150px; 
+  height: 86.60px;
+  background-color: #FCB43A;
+  margin: 43.30px 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 43.30px solid #FCB43A;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 43.30px solid #FCB43A;
+}
+
+.hexagon-border {
+  position: relative;
+  width: 130px; 
+  height: 86.60px;
+  margin: 43.30px 0;
+  border-left: solid 10px #FCB43A;
+  border-right: solid 10px #FCB43A;
+  transition: transform 0.1s;
+  transform-style: preserve-3d;
+}
+
+.hexagon-border:before,
+.hexagon-border:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 92.07px;
+  height: 92.07px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 11.9670px;
+  transition: transform 0.1s;
+  transform-style: preserve-3d;
+}
+
+.hexagon-border:before {
+  top: -53.0330px;
+  border-top: solid 14.1421px #F3C622;
+  border-right: solid 14.1421px #FCD615;
+}
+
+.hexagon-border:after {
+  bottom: -53.0330px;
+  border-bottom: solid 14.1421px #FCB43A;
+  border-left: solid 14.1421px #F3C622;
+}
+
+.hexagon-invisible {
+  position: relative;
+  width: 130px; 
+  height: 86.60px;
+  margin: 43.30px 10px;
+  /* border-left: solid 10px #FFF;
+  border-right: solid 10px #FFF; */
+  transition: transform 0.1s;
+  transform-style: preserve-3d;
+}
