@@ -1,0 +1,31 @@
+body, html {
+  margin: 0;
+  height: 100%;
+  cursor: none; 
+}
+body {
+  background: #222;
+  display: flex;
+  user-select: none;
+}
+
+.cursor {
+  background: #eee;
+  width:10px;
+  height:100%;
+  position: absolute;
+  z-index: -1;
+  top:0px;
+  left:0px;
+  transition: transform 0.1s;
+  transform-style: preserve-3d;
+}
+
+img {
+    display: block;
+    max-width: 500px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
